@@ -1,1 +1,25 @@
-spring.application.name=springbatch-practice
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  # spring-batch ??
+  batch:
+    jdbc:
+      initialize-schema: always
+    job:
+      enabled: false  # ?? ?? ????
+
+logging:
+  level:
+    org.springframework.batch: DEBUG
