@@ -30,6 +30,7 @@ public class HelloJobConfig {
                  .build();
     }
 
+
     @Bean
     public Step helloStep() { // Spring Batch에서 하나의 Step을 정의하는 코드
         return new StepBuilder("helloStep", jobRepository)
