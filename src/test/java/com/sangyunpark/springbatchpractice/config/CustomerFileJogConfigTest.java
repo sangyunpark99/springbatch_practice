@@ -15,7 +15,7 @@ import java.time.LocalDateTime;
 
 @SpringBatchTest
 @SpringBootTest
-class HelloJobConfigTest {
+class CustomerFileJogConfigTest {
 
     @Autowired
     private JobLauncherTestUtils jobLauncherTestUtils;
@@ -24,7 +24,7 @@ class HelloJobConfigTest {
     private JobExplorer jobExplorer;
 
     @Autowired
-    @Qualifier("helloJob")
+    @Qualifier("customerFileJob")
     private Job helloJob;
 
     @Test
